@@ -10,13 +10,13 @@ const withErrorHandler = (WrappedComponent, axios) => {
     };
 
     componentWillMount() {
-      axios.interceptors.request.use(req => {
+/*      axios.interceptors.request.use(req => {
         this.setState({error: null});
         return req;
       });
       axios.interceptors.response.use(res => res, error => {
         this.setState({error: error});
-      })
+      })*/
     }
 
 
